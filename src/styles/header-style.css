@@ -1,0 +1,33 @@
+.header {
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 0 33px;
+}
+
+.header__btn {
+    padding: 16px 22px;
+    transition: 0.3s;
+}
+
+.header__btn:hover {
+    background: #EBEBED;
+    transition: 0.3s;
+}
+
+.header__line {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}

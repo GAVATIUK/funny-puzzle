@@ -1,0 +1,22 @@
+@import url('//db.onlinewebfonts.com/c/a44207bfe4040f536c824dbbf82f5ed1?family=e-Ukraine');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Gwendolyn&family=Hubballi&family=Hurricane&display=swap');
+
+body {
+    font-family: 'e-Ukraine', sans-serif;
+}
+
+.hurricane {
+    font-family: 'Hurricane', cursive;
+}
+
+.hubballi {
+    font-family: 'Hubballi', cursive;
+}
+
+.gwendolyn {
+    font-family: 'Gwendolyn', cursive;
+}
+
+.grandHotel {
+    font-family: 'Grand Hotel', cursive
+}
