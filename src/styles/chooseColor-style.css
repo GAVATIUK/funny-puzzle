@@ -1,0 +1,45 @@
+.colors__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.colors__wrapper > h2 {
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+.colors__container {
+    width: 520px;
+    height: 213px;
+    background: #EBEBED;
+    border-radius: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.color-icon {
+    width: 40px;
+    height: 40px;
+    background: #F1CCEB;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.color-icon:hover {
+    border: 6px solid #FFFFFF;
+    transition: 0.3s;
+}
+
+.chosen {
+    border: 6px solid #FFFFFF;
+    border-radius: 9px;
+}

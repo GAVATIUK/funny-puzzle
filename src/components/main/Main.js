@@ -1,19 +1,16 @@
-import {useState} from "react";
-
 import {Cards} from "../cards/Cards";
 import {ChangeText} from "../changeText/ChangeText";
+import {Modal} from "../modal/Modal";
 
 function Main() {
 
-    const [value, setValue] = useState('Enter your text');
-
     return (
         <main className={'main'}>
-            <ChangeText setValue={setValue} value={value}/>
-            <Cards value={value}/>
+            <ChangeText/>
+            <Cards/>
+            <Modal/>
         </main>
     );
-
 }
 
-export {Main}
+export {Main};

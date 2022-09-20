@@ -45,16 +45,11 @@
 
 
 .change-text__input > input {
-    background-color: inherit;
-    border: none;
     width: 100%;
     font-size: 16px;
     font-family: 'e-Ukraine', sans-serif;
 }
 
-.change-text__input > input:focus {
-    outline: 0;
-}
 
 .green-btn {
     background: #D0FC60;
