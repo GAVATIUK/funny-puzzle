@@ -21,10 +21,10 @@
     height: 37px;
     background: #EBEBED;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .text-background__btn > .btn::before {

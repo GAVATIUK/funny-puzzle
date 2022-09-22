@@ -29,6 +29,7 @@
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .color-icon:hover {

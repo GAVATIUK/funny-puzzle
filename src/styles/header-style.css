@@ -20,6 +20,7 @@
 
 .header__btn {
     padding: 16px 22px;
+    cursor: pointer;
 }
 
 .header__btn:hover {
