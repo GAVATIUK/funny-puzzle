@@ -61,10 +61,8 @@
 .change-text__btn {
     padding: 12px 18px;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 .change-text__btn:hover {
     background: #FFFFFF;
-    transition: 0.3s;
 }

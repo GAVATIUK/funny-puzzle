@@ -97,4 +97,31 @@ const colors = [
     }
 ];
 
-export {colors};
+const bgColors = [
+    {
+        id: 1,
+        hex: '#A67C5F'
+    },
+    {
+        id: 2,
+        hex: '#A57D63'
+    },
+    {
+        id: 3,
+        hex: '#917661'
+    },
+    {
+        id: 4,
+        hex: '#9B7765'
+    },
+    {
+        id: 5,
+        hex: '#8F6F5A'
+    },
+    {
+        id: 6,
+        hex: '#716859'
+    },
+];
+
+export {colors, bgColors};

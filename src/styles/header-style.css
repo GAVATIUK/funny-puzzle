@@ -20,12 +20,10 @@
 
 .header__btn {
     padding: 16px 22px;
-    transition: 0.3s;
 }
 
 .header__btn:hover {
     background: #EBEBED;
-    transition: 0.3s;
 }
 
 .header__line {

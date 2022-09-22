@@ -1,6 +1,4 @@
-import {Cards} from "../cards/Cards";
-import {ChangeText} from "../changeText/ChangeText";
-import {Modal} from "../modal/Modal";
+import {Cards, ChangeText, Modal} from '../index';
 
 function Main() {
 

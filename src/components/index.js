@@ -5,3 +5,6 @@ export * from './changeText/ChangeText';
 export * from './cards/Cards';
 export * from './modal/Modal';
 export * from './chooseColor/ChooseColor';
+export * from './select/Select';
+export * from './modalMainContent/ModalMainContent';
+export * from './chooseBgColor/ChooseBgColor';

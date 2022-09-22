@@ -17,6 +17,7 @@ function ChooseColor() {
     return (
         <div className={'colors__wrapper'}>
             <h4>Виберіть колір шрифта</h4>
+
             <div className={'colors__container'}>
                 {
                     colors.map(color => <div
@@ -29,6 +30,7 @@ function ChooseColor() {
                     </div>)
                 }
             </div>
+
         </div>
     );
 

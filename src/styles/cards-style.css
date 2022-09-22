@@ -22,6 +22,8 @@
 .card__title {
     overflow: hidden;
     height: 203px;
+    display: flex;
+    align-items: center;
 }
 
 .card__title > h2 {
