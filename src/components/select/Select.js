@@ -30,9 +30,10 @@ function Select({modalValue, modalStyle}) {
 
             </div>
 
-            <div className={'select__line'}></div>
-
             <div className={'options__wrapper'}>
+
+                <div className={'select__line'}></div>
+
                 {
                     fonts.map(font =>
 

@@ -68,6 +68,19 @@ function ModalMainContent({modalStyle, modalValue}) {
                         </div>
 
                         <div className={'content-woman'}>
+
+                            <div className={'ruler'}>
+                                <p>160 cм.</p>
+
+                                <div className={'ruler__line'}>
+                                    <div className={'line-x'}> </div>
+                                    <div className={'line-y'}>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
                             <img src={woman} alt="woman"/>
 
                         </div>

@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
-    column-gap: 30px;
+    /*column-gap: 30px;*/
+    justify-content: space-between;
     padding: 64px 0 64px;
 }
 
 .card {
-    width: 630px;
+    width: calc(50% - 15px);
     height: 400px;
     background-color: #FFFFFF;
     border-radius: 23px;
@@ -37,9 +38,8 @@
     position: absolute;
     top: 247px;
     border: 1px solid rgba(0, 0, 0, 0.18);
+    margin-top: 3px;
 }
-
-/* /////////////////////////////////////// тимчасовий візуал /////////////////////////////////////////*/
 
 .btn__container {
     display: flex;
@@ -55,7 +55,6 @@
     font-size: 18px;
     line-height: 22px;
     color: #1E1E1E;
-    transition: 0.5s;
     position: absolute;
     left: 0;
     margin-bottom: 17.5px;
@@ -72,7 +71,6 @@
     height: 65px;
     background: #D0FC60;
     border-radius: 50%;
-    transition: 0.5s;
     margin-bottom: 17.5px;
     display: flex;
     align-items: center;
@@ -80,9 +78,8 @@
 }
 
 .btn__container:hover .btn {
-    width: 542px;
+    width: 100%;
     border-radius: 50px;
-    transition: 0.5s;
     padding: 17.5px 0;
     margin: 0;
 }
@@ -108,6 +105,183 @@
     background-color: #1E1E1E;
     position: absolute;
     left: 12.5px;
+}
+
+/*///////////////////////////////////////////// - MEDIA - //////////////////////////////////////////////*/
+
+@media (max-width: 1350px) {
+
+    .card__line {
+        width: 472px;
+    }
+
+    .card__title > h2 {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+
+    .cards__wrapper {
+        padding: 40px 0 64px;
+        row-gap: 20px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+        height: 300px;
+        padding: 20px 30px 26px 30px;
+    }
+
+    .card__title {
+        height: 150px;
+    }
+
+    .card__title > h2 {
+        font-size: 50px;
+    }
+
+    .card__line {
+        width: 405px;
+        top: 180px;
+    }
+
+    .btn__container > .btn__title {
+        font-size: 16px;
+    }
+
+    .btn__container:hover .btn__title {
+        margin-left: 10px;
+    }
+
+    .btn__container > .btn {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 13px;
+    }
+
+    .btn__container:hover .btn {
+        padding: 13px 0;
+    }
+
+    .plus-icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 11px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .cards__wrapper {
+        padding: 30px 0 50px;
+        row-gap: 16px;
+    }
+
+    .card {
+        width: calc(50% - 8px);
+        height: 230px;
+        padding: 10px 20px 15px 20px;
+    }
+
+    .card__title {
+        height: 140px;
+    }
+
+    .card__title > h2 {
+        font-size: 35px;
+    }
+
+    .card__line {
+        width: 312px;
+        top: 150px;
+    }
+
+    .btn__container {
+        height: 40px;
+        justify-content: center;
+        background: #D0FC60;
+        border-radius: 24px;
+    }
+
+    .btn__container > .btn__title {
+        font-size: 14px;
+        margin: 0;
+        position: static;
+    }
+
+    .btn__container:hover .btn__title {
+        margin-left: 0;
+    }
+
+    .btn__container > .btn {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .card {
+        width: 100%;
+    }
+
+    .card__title {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card__title > h2 {
+        font-size: 47px;
+    }
+
+    .card__line {
+        width: 460px;
+    }
+
+    .btn__container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .card__line {
+        width: 420px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .cards__wrapper {
+        padding: 20px 0 30px;
+        row-gap: 15px;
+    }
+
+    .card {
+        height: 170px;
+        padding: 10px 15px 15px 15px;
+    }
+
+    .card__title {
+        width: 100%;
+        height: 130px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .card__title > h2 {
+        font-size: 30px;
+    }
+
+    .card__line {
+        display: none;
+    }
+
 }
 
 

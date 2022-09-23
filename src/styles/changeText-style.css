@@ -43,13 +43,11 @@
     line-height: 160%;
 }
 
-
 .change-text__input > input {
     width: 100%;
     font-size: 16px;
     font-family: 'e-Ukraine', sans-serif;
 }
-
 
 .green-btn {
     background: #D0FC60;
@@ -66,4 +64,89 @@
 
 .change-text__btn:hover {
     background: #FFFFFF;
+}
+
+/*///////////////////////////////////////////// - MEDIA - //////////////////////////////////////////////*/
+
+@media (max-width: 991px) {
+
+    .change-text__section {
+        padding: 22px 0 40px;
+    }
+
+    .change-text__wrapper {
+        height: 65px;
+    }
+
+    .change-text__btn {
+        padding: 11px 16px;
+    }
+
+    .empty-value::after {
+        bottom: -34px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .change-text__section {
+        padding: 22px 0 30px;
+    }
+
+    .change-text__wrapper {
+        height: 55px;
+    }
+
+    .change-text__btn {
+        padding: 10px 14px;
+        margin-left: 5px;
+    }
+
+    .green-btn {
+        font-size: 12px;
+    }
+
+    .change-text__input > input {
+        font-size: 14px;
+    }
+
+    .empty-value::after {
+        bottom: -26px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .change-text__section {
+        padding: 15px 0 25px;
+    }
+
+    .change-text__wrapper {
+        height: 45px;
+        padding: 0 10px;
+    }
+
+    .change-text__btn {
+        padding: 6px 8px;
+        margin-left: 5px;
+    }
+
+    .green-btn {
+        font-size: 10px;
+    }
+
+    .change-text__input > input {
+        font-size: 11px;
+        margin-left: -5px;
+    }
+
+    .empty-value::after {
+        bottom: -23px;
+        font-size: 10px;
+    }
+
 }

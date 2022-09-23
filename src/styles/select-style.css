@@ -1,5 +1,5 @@
 .select__wrapper {
-    width: 520px;
+    width: 100%;
     height: 80px;
     background: #EBEBED;
     border-radius: 24px;
@@ -16,7 +16,7 @@
 }
 
 .select {
-    width: 520px;
+    width: 525px;
     height: 80px;
     position: fixed;
     display: flex;
@@ -28,6 +28,7 @@
     border-radius: 24px;
     cursor: pointer;
 }
+
 
 .select__btn {
     width: 46px;
@@ -48,24 +49,26 @@
 }
 
 .select__line {
-    width: 483px;
+    width: 100%;
     height: 0;
     border: 1px solid rgba(0, 0, 0, 0.06);
-    margin-bottom: 21px;
+    display: flex;
 }
 
 .options__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 18px;
-    padding: 0 0 20px 23px;
+    padding: 80px 60px 20px 23px;
+    box-sizing: border-box;
 }
 
 .option {
     background: #FFFFFF;
     border-radius: 28.5px;
     color: #4F4F4F;
-    width: 437px;
+    width: 100%;
     height: 57px;
     display: flex;
     align-items: center;
@@ -76,4 +79,62 @@
 
 .option > h3 {
     font-size: 18px;
+}
+
+/*///////////////////////////////////////////// - MEDIA - //////////////////////////////////////////////*/
+
+@media (max-width: 1350px) {
+    .select {
+        width: 502px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .select {
+        width: 417px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .select {
+        width: 660px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .select {
+        width: 440px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .select {
+        width: 410px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .select {
+        width: 260px;
+    }
+
+    .select > h2 {
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .option > h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
 }
