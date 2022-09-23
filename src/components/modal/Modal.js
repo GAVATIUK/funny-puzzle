@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useRef} from "react";
 
-import {ChooseColor, Select, ChooseBgColor, ModalMainContent} from "../index";
+import {ChooseColor, Select, ChooseBgColor, ModalMainContent, ChooseFontSize} from "../index";
 import {returnDefault, setModalInputValue} from "../../redux/slices/toolsSlice";
 import '../../styles/modal-style.css';
 
@@ -76,6 +76,10 @@ function Modal() {
                             <h3 className={'options__subtitle'}>Виберіть шрифт</h3>
 
                             <Select modalValue={modalValue} modalStyle={modalStyle}/>
+
+                            <div className={'options__line'}></div>
+
+                            <ChooseFontSize/>
 
                             <div className={'options__line'}></div>
 

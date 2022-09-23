@@ -9,6 +9,10 @@ body, h1, h2, h3, h4, p, span {
     cursor: default;
 }
 
+body {
+    background-color: #EBEBED;
+}
+
 input {
     background: inherit;
     border: 0;
@@ -19,8 +23,9 @@ input:focus {
     outline: 0;
 }
 
-body {
-    background-color: #EBEBED;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 .main {

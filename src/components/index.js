@@ -8,3 +8,4 @@ export * from './chooseColor/ChooseColor';
 export * from './select/Select';
 export * from './modalMainContent/ModalMainContent';
 export * from './chooseBgColor/ChooseBgColor';
+export * from './chooseFontSize/ChooseFontSize';

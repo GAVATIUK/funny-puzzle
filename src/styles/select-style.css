@@ -29,6 +29,10 @@
     cursor: pointer;
 }
 
+.select > input {
+    font-size: 18px;
+    height: 100%;
+}
 
 .select__btn {
     width: 46px;

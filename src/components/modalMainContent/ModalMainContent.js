@@ -12,6 +12,7 @@ function ModalMainContent({modalStyle, modalValue}) {
     const bgColor = useSelector(state => state.toolsReducer.bgColor);
     const value = useSelector(state => state.toolsReducer.modalInputValue);
     const icon = useSelector(state => state.toolsReducer.icon);
+    const fontSize = useSelector(state => state.toolsReducer.fontSize);
 
     const dispatch = useDispatch();
 
@@ -39,6 +40,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                             <h2 className={modalStyle}
                                 style={
                                     {
+                                        fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
                                         textShadow: textShadow(bgColor)
                                     }
@@ -59,6 +61,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                             <h2 className={modalStyle}
                                 style={
                                     {
+                                        fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
                                         textShadow: textShadow(bgColor)
                                     }
