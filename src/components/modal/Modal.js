@@ -79,6 +79,8 @@ function Modal() {
 
                             <div className={'options__line'}></div>
 
+                            <h3 className={'options__subtitle'}>Розмір шрифта</h3>
+
                             <ChooseFontSize/>
 
                             <div className={'options__line'}></div>
