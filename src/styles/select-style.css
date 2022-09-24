@@ -136,6 +136,11 @@
         font-size: 18px;
     }
 
+    .select > input {
+        font-size: 15px;
+        width: 60%;
+    }
+
     .option > h3 {
         font-size: 15px;
         line-height: 20px;
