@@ -11,7 +11,7 @@
 }
 
 .opened {
-    height: 494px;
+    height: 474px;
     overflow: auto;
 }
 
@@ -31,14 +31,15 @@
 
 .select > input {
     font-size: 18px;
-    height: 100%;
+    height: 92%;
+    width: 30%;
 }
 
 .select__btn {
     width: 46px;
     height: 46px;
     background: #D0FC60;
-    border-radius: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,8 +96,32 @@
 
 @media (max-width: 1199px) {
 
+    .select__wrapper {
+        height: 60px;
+    }
+
+    .opened {
+        height: 379px;
+    }
+
     .select {
-        width: 417px;
+        width: 390px;
+        height: 60px;
+    }
+
+    .select > h2 {
+        font-size: 22px;
+    }
+
+    .select__btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .options__wrapper {
+        row-gap: 18px;
+        padding: 60px 60px 20px 23px;
     }
 
 }
@@ -104,7 +129,7 @@
 @media (max-width: 991px) {
 
     .select {
-        width: 660px;
+        width: 600px;
     }
 
 }
@@ -112,7 +137,7 @@
 @media (max-width: 767px) {
 
     .select {
-        width: 440px;
+        width: 410px;
     }
 
 }
@@ -127,22 +152,49 @@
 
 @media (max-width: 480px) {
 
+    .select__wrapper {
+        height: 40px;
+        border-radius: 16px;
+    }
+
+    .opened {
+        height: 323px;
+    }
+
     .select {
-        width: 260px;
+        width: 240px;
+        height: 40px;
     }
 
     .select > h2 {
         line-height: 20px;
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .select__btn {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
     }
 
     .select > input {
         font-size: 15px;
-        width: 60%;
+    }
+
+    .options__wrapper {
+        row-gap: 12px;
+    }
+
+    .option {
+        height: 40px;
+        font-size: 11px;
+        overflow: hidden;
+        justify-content: center;
+        padding: 0 5px;
     }
 
     .option > h3 {
-        font-size: 15px;
+        font-size: 12px;
         line-height: 20px;
     }
 
