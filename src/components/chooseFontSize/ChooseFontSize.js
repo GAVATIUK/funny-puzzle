@@ -30,16 +30,9 @@ function ChooseFontSize() {
 
                 <div className={'select'} onClick={() => setOpen(!open)}>
 
-                    {/*without writing value
-                        <h2>
-                            {fontSize} px.
-                        </h2>
-                    */}
-
                     <input type='number'
                            value={fontSize}
                            onChange={handleOnchange}
-                           placeholder={'Виберіть розмір'}
                            onClick={e => e.stopPropagation()}
                     />
 
