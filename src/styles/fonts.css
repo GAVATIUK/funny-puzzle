@@ -1,4 +1,3 @@
-@import url('//db.onlinewebfonts.com/c/a44207bfe4040f536c824dbbf82f5ed1?family=e-Ukraine');
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Gwendolyn&family=Hubballi&family=Hurricane&display=swap');
 
 
@@ -275,6 +274,62 @@ body {
 .vladimirScript {
     font-family: 'Vladimir Script', cursive;
 }
+
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-Light.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-UltraLight.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-Medium.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-Regular.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-Bold.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/e-Ukraine-Thin.woff2') format('woff2'),
+      url('../fonts/e-Ukraine-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 
