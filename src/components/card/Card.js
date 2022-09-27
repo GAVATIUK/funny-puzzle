@@ -30,11 +30,12 @@ function Card({style, card}) {
                 <div className={'btn__title'}>Кастомізувати</div>
 
                 <div className={'btn'}>
-                <div className={'plus-icon'}>
-                    <div className={'stick1'}> </div>
-                    <div className={'stick2'}> </div>
-                </div>
-
+                  <div className={'btn__inner'}>
+                    <div className={'plus-icon'}>
+                        <div className={'stick1'}> </div>
+                        <div className={'stick2'}> </div>
+                    </div>
+                  </div>
                 </div>
 
             </div>
