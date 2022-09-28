@@ -59,6 +59,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .2s;
+}
+
+.modal__header-btn:hover {
+  background: #EBEBED;
 }
 
 .modal__header-btn::before {
@@ -119,6 +124,7 @@
     padding: 22px 10px 80px 22px;
     display: flex;
     flex-direction: column;
+    font-family: 'e-Ukraine';
 }
 
 /*///////////////////////////////////////////// - MEDIA - //////////////////////////////////////////////*/

@@ -31,10 +31,18 @@
 
 .main-content__title {
     word-break: break-all;
+    position: relative;
 }
 
 .main-content__title > h2 {
     color: #4F4F4F;
+    position: relative;
+    z-index: 2;
+}
+.main-content__title > span {
+  color: #4F4F4F;
+  position: absolute;
+  z-index: 1;
 }
 
 .content__bed {
@@ -65,6 +73,11 @@
     text-align: start;
     word-break: break-all;
     box-sizing: border-box;
+}
+
+.content-woman__title > span {
+  top: 0;
+  left: 0;
 }
 
 .content-woman {

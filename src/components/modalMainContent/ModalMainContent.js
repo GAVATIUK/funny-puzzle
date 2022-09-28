@@ -42,11 +42,20 @@ function ModalMainContent({modalStyle, modalValue}) {
                                     {
                                         fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
-                                        textShadow: textShadow(bgColor)
                                     }
                                 }>
                                 {value ? value : modalValue}
                             </h2>
+                            <span className={modalStyle}
+                                style={
+                                    {
+                                        fontSize: `${fontSize}px`,
+                                        color: `${fontColor}`,
+                                        webkitTextStroke: `30px ${bgColor}` ,
+                                    }
+                                }>
+                                {value ? value : modalValue}
+                            </span>
                         </div>
 
                         <div className={'content__bed'}>
@@ -63,11 +72,20 @@ function ModalMainContent({modalStyle, modalValue}) {
                                     {
                                         fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
-                                        textShadow: textShadow(bgColor)
                                     }
                                 }>
                                 {value ? value : modalValue}
                             </h2>
+                            <span className={modalStyle}
+                                style={
+                                    {
+                                        fontSize: `${fontSize}px`,
+                                        color: `${fontColor}`,
+                                        webkitTextStroke: `30px ${bgColor}` ,
+                                    }
+                                }>
+                                {value ? value : modalValue}
+                            </span>
                         </div>
 
                         <div className={'content-woman'}>

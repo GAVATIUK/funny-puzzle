@@ -28,24 +28,25 @@
     cursor: pointer;
 }
 
-.text-background__btn > .btn::before {
-    content: '\2713';
+.text-background__btn > .btn svg {
     font-size: 0;
     transition: 0.2s;
+    opacity: 0;
 }
 
-.text-background__btn > .btn:hover:before{
+.text-background__btn > .btn:hover svg{
     font-size: 25px;
-    transition: 0.2s;
+    transition: 0.1s;
+    opacity: 1;
 }
 
 .text-background__btn > .bg-green {
     background: #D0FC60;
 }
 
-.text-background__btn > .checked::before {
-    content: '\2713';
+.text-background__btn > .checked svg {
     font-size: 25px;
+    opacity: 1;
 }
 
 .text-background__btn > .btn__title {
