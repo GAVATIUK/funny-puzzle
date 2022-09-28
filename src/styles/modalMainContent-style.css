@@ -92,7 +92,7 @@
 
 .ruler {
     height: 100%;
-    width: calc(50% - 42px);
+    width: calc(50% - 41px);
     padding-left: 21px;
     display: flex;
     flex-direction: column;
@@ -155,6 +155,15 @@
 }
 
 /*///////////////////////////////////////////// - MEDIA - //////////////////////////////////////////////*/
+
+@media (min-width: 1350px) {
+
+    .content-woman > img {
+        width: 65%;
+        height: 96%;
+    }
+
+}
 
 @media (min-width: 992px) {
     .main-content__icons > .icon:hover {
