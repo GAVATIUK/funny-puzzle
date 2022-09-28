@@ -16,17 +16,9 @@ function ModalMainContent({modalStyle, modalValue}) {
 
     const dispatch = useDispatch();
 
-    const textShadow = (item) => {
+    const textShadow = () => {
         if (bgIsActive) {
-            return ` -4px 1px 6px ${item}, 
-        -6px 0 6px ${item},
-         -5px 5px 6px ${item}, 
-         -3px 3px 6px ${item}, 
-         -1px 1px 6px ${item}, 
-         1px -1px 6px ${item}, 
-         3px -3px 6px ${item}, 
-         5px -5px 6px ${item}, 
-         7px -7px 6px ${item}`
+            return `30px ${bgColor}`
         }
     }
 
@@ -51,7 +43,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                     {
                                         fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
-                                        webkitTextStroke: `30px ${bgColor}` ,
+                                        webkitTextStroke: textShadow()
                                     }
                                 }>
                                 {value ? value : modalValue}
@@ -71,7 +63,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                 style={
                                     {
                                         fontSize: `${fontSize}px`,
-                                        color: `${fontColor}`,
+                                        color: `${fontColor}`
                                     }
                                 }>
                                 {value ? value : modalValue}
@@ -81,7 +73,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                     {
                                         fontSize: `${fontSize}px`,
                                         color: `${fontColor}`,
-                                        webkitTextStroke: `30px ${bgColor}` ,
+                                        webkitTextStroke: textShadow()
                                     }
                                 }>
                                 {value ? value : modalValue}
