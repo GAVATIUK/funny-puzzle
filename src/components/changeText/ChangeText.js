@@ -12,6 +12,12 @@ function ChangeText() {
 
     const handleChange = (e) => dispatch(setValue(e.target.value));
 
+    const handleClick = () => {
+        if (value) {
+            dispatch(setIsActive(true));
+        }
+    }
+
 
     return (
         <section className={'change-text__section'}>
@@ -29,7 +35,7 @@ function ChangeText() {
                 </div>
 
                 <div className={'change-text__btn green-btn'}
-                onClick={() => dispatch(setIsActive(true))}>
+                onClick={handleClick}>
                     Вибрати шрифт
                 </div>
 
