@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 
-import {setValue} from "../../redux/slices/toolsSlice";
+import {setValue, setIsActive} from "../../redux/slices/toolsSlice";
 import {searchIcon} from '../../pictures/index';
 import '../../styles/changeText-style.css';
 
@@ -23,11 +23,13 @@ function ChangeText() {
                     <input type="text"
                            placeholder={'Введіть текст'}
                            onChange={handleChange}
+                           value={value}
                     />
 
                 </div>
 
-                <div className={'change-text__btn green-btn'}>
+                <div className={'change-text__btn green-btn'}
+                onClick={() => dispatch(setIsActive(true))}>
                     Вибрати шрифт
                 </div>
 
