@@ -21,7 +21,6 @@ function Card({style, card}) {
         <div className={'card'}>
 
             <div className={'card__title'}>
-                {/*<h2 className={style}>{value}</h2>*/}
 
                 <input type="text"
                        className={style}
