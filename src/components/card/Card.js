@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 
-import {setIsActive, setModalStyle, setModalValue} from "../../redux/slices/toolsSlice";
+import {setIsActive, setModalStyle, setModalValue, setValue} from "../../redux/slices/toolsSlice";
 import '../../styles/cards-style.css';
 
 function Card({style, card}) {
@@ -15,11 +15,20 @@ function Card({style, card}) {
         dispatch(setIsActive(true))
     };
 
+    const handleChange = (e) => dispatch(setValue(e.target.value));
+
     return (
         <div className={'card'}>
 
             <div className={'card__title'}>
-                <h2 className={style}>{value}</h2>
+                {/*<h2 className={style}>{value}</h2>*/}
+
+                <input type="text"
+                       className={style}
+                       onChange={handleChange}
+                       value={value}
+                />
+
             </div>
 
             <div className={'card__line line'}> </div>

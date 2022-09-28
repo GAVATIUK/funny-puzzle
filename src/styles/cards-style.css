@@ -22,14 +22,23 @@
     overflow: hidden;
     display: flex;
     align-items: flex-start;
+    min-height: 150px;
 }
 
-.card__title > h2 {
-    font-size: 72px;
-    color: #4F4F4F;
-    padding: 16px;
-    display: block;
-    word-break: break-all;
+/*.card__title > h2 {*/
+/*    font-size: 72px;*/
+/*    color: #4F4F4F;*/
+/*    padding: 16px;*/
+/*    display: block;*/
+/*    word-break: break-all;*/
+/*}*/
+
+.card__title > input {
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 50px;
 }
 
 .btn__container {
@@ -113,9 +122,9 @@
         width: 472px;
     }
 
-    .card__title > h2 {
-        font-size: 60px;
-    }
+    /*.card__title > h2 {*/
+    /*    font-size: 60px;*/
+    /*}*/
 
 }
 
@@ -134,8 +143,12 @@
         min-height: 140px;
     }
 
-    .card__title > h2 {
-        font-size: 50px;
+    /*.card__title > h2 {*/
+    /*    font-size: 50px;*/
+    /*}*/
+
+    .card__title > input {
+        font-size: 45px;
     }
 
     .card__line {
@@ -178,7 +191,11 @@
         padding: 10px 20px 15px 20px;
     }
 
-    .card__title > h2 {
+    /*.card__title > h2 {*/
+    /*    font-size: 35px;*/
+    /*}*/
+
+    .card__title > input {
         font-size: 35px;
     }
 
@@ -226,8 +243,12 @@
         justify-content: center;
     }
 
-    .card__title > h2 {
-        font-size: 47px;
+    /*.card__title > h2 {*/
+    /*    font-size: 47px;*/
+    /*}*/
+
+    .card__title > input {
+        font-size: 40px;
     }
 
     .card__line {
@@ -267,8 +288,12 @@
         justify-content: center;
     }
 
-    .card__title > h2 {
-        font-size: 30px;
+    /*.card__title > h2 {*/
+    /*    font-size: 30px;*/
+    /*}*/
+
+    .card__title > input {
+        font-size: 25px;
     }
 
     .card__line {
