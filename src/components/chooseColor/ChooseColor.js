@@ -16,7 +16,7 @@ function ChooseColor() {
 
     return (
         <div className={'colors__wrapper'}>
-            <h4>Виберіть колір шрифта</h4>
+            <h4>Choose font color</h4>
 
             <div className={'colors__container'}>
                 {

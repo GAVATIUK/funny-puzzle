@@ -19,3 +19,6 @@ import 'Girlish.otf';
 import 'Gabrielly.ttf';
 import 'EmbassyBT.ttf';
 import 'Delisha Glande.ttf';
+import 'KAUFMANN.TTF';
+import 'KUNSTLER.TTF';
+import 'mr_DopestyleG.otf'

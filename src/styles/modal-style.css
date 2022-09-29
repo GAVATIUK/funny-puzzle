@@ -107,21 +107,21 @@
 
 .options__input {
     width: 100%;
-    height: 126px;
-    background: #EBEBED;
-    border-radius: 24px;
 }
 
-.options__input > input {
+.options__input > textarea {
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
     font-weight: 300;
     font-size: 14px;
     color: rgba(30, 30, 30, 0.4);
     border: none;
-    background: inherit;
+    background: #EBEBED;
     border-radius: 24px;
     box-sizing: border-box;
-    padding: 22px 10px 80px 22px;
+    padding: 22px 10px 22px 22px;
     display: flex;
     flex-direction: column;
     font-family: 'e-Ukraine';
@@ -176,7 +176,7 @@
         height: 85px;
     }
 
-    .options__input > input {
+    .options__input > textarea {
         padding: 15px 10px 50px 22px;
     }
 
@@ -264,7 +264,7 @@
         height: 70px;
     }
 
-    .options__input > input {
+    .options__input > textarea {
         font-size: 14px;
         border-radius: 24px;
         padding: 15px 10px 35px 22px;
@@ -279,7 +279,8 @@
 @media (max-width: 530px) {
 
     .modal__container {
-        width: 440px;
+        width: 90%;
+        max-width: 440px;
     }
 
 }
@@ -288,10 +289,6 @@
 
     .modal__wrapper {
         padding: 15px 0 0;
-    }
-
-    .modal__container {
-        width: 270px;
     }
 
     .modal__header {
@@ -323,7 +320,7 @@
         height: 60px;
     }
 
-    .options__input > input {
+    .options__input > textarea {
         font-size: 10px;
         border-radius: 24px;
         padding: 15px 10px 30px 15px;

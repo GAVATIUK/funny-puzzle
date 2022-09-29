@@ -45,7 +45,7 @@ function Modal() {
                 <div className={'modal__container'}>
 
                     <div className={'modal__header'}>
-                        <h1 className={'modal__header-title'}>Налаштуйте свій стиль</h1>
+                        <h1 className={'modal__header-title'}>Customize your style</h1>
 
                         <div className={'modal__header-btn'}
                              onClick={handleClick}>
@@ -62,24 +62,24 @@ function Modal() {
 
                         <div className={'modal__options'}>
 
-                            <h3 className={'options__subtitle'}>Надпис</h3>
+                            <h3 className={'options__subtitle'}>Text</h3>
 
                             <div className={'options__input'}>
-                                <input type="text"
+                                <textarea
                                        ref={ref}
-                                       placeholder={'Введіть підпис'}
+                                       placeholder={'Type something...'}
                                        onChange={handleChange}/>
                             </div>
 
                             <div className={'options__line'}></div>
 
-                            <h3 className={'options__subtitle'}>Виберіть шрифт</h3>
+                            <h3 className={'options__subtitle'}>Font</h3>
 
                             <Select modalValue={modalValue} modalStyle={modalStyle}/>
 
                             <div className={'options__line'}></div>
 
-                            <h3 className={'options__subtitle'}>Розмір шрифта</h3>
+                            <h3 className={'options__subtitle'}>Font size</h3>
 
                             <ChooseFontSize/>
 
@@ -87,9 +87,9 @@ function Modal() {
 
                             <ChooseColor/>
 
-                            <div className={'options__line'}></div>
+                            {/* <div className={'options__line'}></div>
 
-                            <ChooseBgColor/>
+                            <ChooseBgColor/> */}
 
                         </div>
                     </div>

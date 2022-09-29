@@ -275,6 +275,41 @@ body {
     font-family: 'Vladimir Script', cursive;
 }
 
+/*//////////////////////////////////////////// - Kaufmann -  ////////////////////////////////////////////*/
+
+@font-face {
+  font-family: "Kaufman";
+  src: local("Kaufman"),
+  url("../fonts/KAUFMANN.TTF") format("truetype");
+}
+
+.kaufmann {
+  font-family: 'Kaufman', cursive;
+}
+
+/*//////////////////////////////////////////// - Kunstler -  ////////////////////////////////////////////*/
+
+@font-face {
+  font-family: "Kunstler";
+  src: local("Kunstler"),
+  url("../fonts/KUNSTLER.TTF") format("truetype");
+}
+
+.kunstler {
+  font-family: 'Kunstler', cursive;
+}
+
+/*//////////////////////////////////////////// - Dope Style -  ////////////////////////////////////////////*/
+
+@font-face {
+  font-family: "Dope Style";
+  src: local("DopeStyle"),
+  url("../fonts/mr_DopestyleG.otf") format("opentype");
+}
+
+.dopestyle {
+  font-family: 'Dope Style', cursive;
+}
 
 @font-face {
   font-family: 'e-Ukraine';

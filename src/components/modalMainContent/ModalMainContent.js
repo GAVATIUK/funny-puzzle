@@ -38,16 +38,6 @@ function ModalMainContent({modalStyle, modalValue}) {
                                 }>
                                 {value ? value : modalValue}
                             </h2>
-                            <span className={modalStyle}
-                                style={
-                                    {
-                                        fontSize: `${fontSize}px`,
-                                        color: `${fontColor}`,
-                                        webkitTextStroke: textShadow()
-                                    }
-                                }>
-                                {value ? value : modalValue}
-                            </span>
                         </div>
 
                         <div className={'content__bed'}>
@@ -68,16 +58,6 @@ function ModalMainContent({modalStyle, modalValue}) {
                                 }>
                                 {value ? value : modalValue}
                             </h2>
-                            <span className={modalStyle}
-                                style={
-                                    {
-                                        fontSize: `${fontSize}px`,
-                                        color: `${fontColor}`,
-                                        webkitTextStroke: textShadow()
-                                    }
-                                }>
-                                {value ? value : modalValue}
-                            </span>
                         </div>
 
                         <div className={'content-woman'}>

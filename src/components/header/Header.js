@@ -11,7 +11,7 @@ function Header() {
                     <h2 className={'header__logo'}>Funny Puzzle</h2>
 
                     <div className={'header__btn green-btn'}>
-                        Переглянути сайт
+                        Go to shop
                     </div>
 
                 </div>

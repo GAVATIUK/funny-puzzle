@@ -36,7 +36,7 @@ function ChangeText() {
 
                 <div className={'change-text__btn green-btn'}
                 onClick={handleClick}>
-                    Вибрати шрифт
+                    Choose font
                 </div>
 
             </div>

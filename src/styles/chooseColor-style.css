@@ -4,6 +4,7 @@
     flex-direction: column;
     row-gap: 12px;
     background-color: #FFFFFF;
+    margin-bottom: 40px;
 }
 
 .colors__wrapper > h2 {

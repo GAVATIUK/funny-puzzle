@@ -3,18 +3,18 @@ import '../styles/fonts.css';
 const fonts = [
     {
         id: 1,
-        font: 'hurricane',
-        name: 'Hurricane',
+        font: 'kaufmann',
+        name: 'Kaufmann',
     },
     {
         id: 2,
-        font: 'hubballi',
-        name: 'Hubballi',
+        font: 'kunstler',
+        name: 'Kunstler',
     },
     {
         id: 3,
-        font: 'gwendolyn',
-        name: 'Gwendolyn',
+        font: 'dopestyle',
+        name: 'Dope Style',
     },
     {
         id: 4,
@@ -45,7 +45,6 @@ const fonts = [
         id: 9,
         font: 'cooper',
         name: 'Cooper'
-
     },
     {
         id: 10,
@@ -93,7 +92,6 @@ const fonts = [
         id: 17,
         font: 'iLoveGlitter',
         name: 'I Love Glitter'
-
     },
     {
         id: 18,
@@ -105,7 +103,6 @@ const fonts = [
         id: 19,
         font: 'lobster',
         name: 'Lobster'
-
     },
     {
         id: 20,

@@ -35,7 +35,7 @@ function Card({style, card}) {
             <div className="btn__container"
                 onClick={handleClick}>
 
-                <div className={'btn__title'}>Кастомізувати</div>
+                <div className={'btn__title'}>Customize</div>
 
                 <div className={'btn'}>
                   <div className={'btn__inner'}>
