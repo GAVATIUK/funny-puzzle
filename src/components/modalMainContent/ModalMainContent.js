@@ -8,19 +8,19 @@ import '../../styles/modalMainContent-style.css';
 function ModalMainContent({modalStyle, modalValue}) {
 
     const fontColor = useSelector(state => state.toolsReducer.fontColor);
-    const bgIsActive = useSelector(state => state.toolsReducer.bgIsActive);
-    const bgColor = useSelector(state => state.toolsReducer.bgColor);
+    // const bgIsActive = useSelector(state => state.toolsReducer.bgIsActive);
+    // const bgColor = useSelector(state => state.toolsReducer.bgColor);
     const value = useSelector(state => state.toolsReducer.modalInputValue);
     const icon = useSelector(state => state.toolsReducer.icon);
     const fontSize = useSelector(state => state.toolsReducer.fontSize);
 
     const dispatch = useDispatch();
 
-    const textShadow = () => {
-        if (bgIsActive) {
-            return `30px ${bgColor}`
-        }
-    }
+    // const textShadow = () => {
+    //     if (bgIsActive) {
+    //         return `30px ${bgColor}`
+    //     }
+    // }
 
     return (
         <div className={'modal__main-content'}>
@@ -33,7 +33,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                 style={
                                     {
                                         fontSize: `${fontSize}px`,
-                                        color: `${fontColor}`,
+                                        color: `${fontColor}`
                                     }
                                 }>
                                 {value ? value : modalValue}

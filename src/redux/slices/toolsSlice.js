@@ -2,8 +2,8 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     isActive: false,
-    modalValue: '',
-    modalStyle: '',
+    modalValue: 'Kaufmann',
+    modalStyle: 'kaufmann',
     value: 'Enter your text',
     fontColor: '#020305',
     bgColor: '#A67C5F',
