@@ -144,7 +144,7 @@
 @media (max-width: 530px) {
 
     .select {
-        width: 90%;
+        width: 83%;
     }
 
 }
@@ -161,7 +161,6 @@
     }
 
     .select {
-        width: 353px;
         height: 40px;
     }
 
