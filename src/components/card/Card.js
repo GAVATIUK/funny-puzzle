@@ -22,10 +22,10 @@ function Card({style, card}) {
 
             <div className={'card__title'}>
 
-                <input type="text"
-                       className={style}
-                       onChange={handleChange}
-                       value={value}
+                <textarea
+                    className={style}
+                    onChange={handleChange}
+                    value={value}
                 />
 
             </div>

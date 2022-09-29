@@ -23,13 +23,21 @@
     display: flex;
     align-items: flex-start;
     min-height: 150px;
+    box-sizing: border-box;
 }
 
-.card__title > input {
-    height: 100%;
+.card__title > textarea {
+    resize: none;
+    border: none;
     box-sizing: border-box;
     width: 100%;
     font-size: 50px;
+    padding: 15px 0 0 10px;
+    height: 99%;
+}
+
+.card__title > textarea:focus {
+    outline: none;
 }
 
 .btn__container {
@@ -128,7 +136,7 @@
         min-height: 140px;
     }
 
-    .card__title > input {
+    .card__title > textarea {
         font-size: 45px;
     }
 
@@ -172,7 +180,11 @@
         padding: 10px 20px 15px 20px;
     }
 
-    .card__title > input {
+    .card__title {
+        padding-bottom: 5px;
+    }
+
+    .card__title > textarea {
         font-size: 35px;
     }
 
@@ -220,7 +232,7 @@
         justify-content: center;
     }
 
-    .card__title > input {
+    .card__title > textarea {
         font-size: 40px;
     }
 
@@ -261,7 +273,7 @@
         justify-content: center;
     }
 
-    .card__title > input {
+    .card__title > textarea {
         font-size: 25px;
     }
 
