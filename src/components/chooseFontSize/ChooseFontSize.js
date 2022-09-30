@@ -30,6 +30,26 @@ function ChooseFontSize() {
         }
     };
 
+    const handleClick = (value) => {
+
+        if (value > 0 && value < 15) {
+            dispatch(setFontSize(sizes[value]));
+        }
+
+        else if (value >= 14 && value < 30) {
+            dispatch(setFontSize((sizes[value] / 100 * 90).toFixed(1)));
+        }
+
+        else if (value >= 30)  {
+            dispatch(setFontSize((sizes[value] / 100 * 80).toFixed(1)));
+        }
+    }
+
+    console.log(fontSize)
+
+
+
+
     return (
 
         <div className={'chooseFontSize__wrapper'}>
@@ -60,9 +80,9 @@ function ChooseFontSize() {
                         Object.keys(sizes).map((value, index) => 
                           <div className={'option'}
                                 key={index}
-                                onClick={() => dispatch(setFontSize(sizes[value]))}>
+                                onClick={() => handleClick(value)}>
 
-                                {value}
+                                {`${value} inch`}
 
                           </div>)
                     }

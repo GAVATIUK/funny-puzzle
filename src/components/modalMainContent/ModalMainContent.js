@@ -23,6 +23,26 @@ function ModalMainContent({modalStyle, modalValue}) {
     //     }
     // }
 
+    const resizeBedImg = () => {
+        if (fontSize >= 46.8 && fontSize < 69.6) {
+            return 'content__bed resize-bed1'
+        } else if (fontSize >= 69.6) {
+            return 'content__bed resize-bed2'
+        } else {
+            return 'content__bed'
+        }
+    }
+
+    const resizeWomenImg = () => {
+        if (fontSize >= 46.8 && fontSize < 69.6) {
+            return 'main-content__woman main-content-general resize-woman1'
+        } else if (fontSize >= 69.6) {
+            return 'main-content__woman main-content-general resize-woman2'
+        } else {
+            return 'main-content__woman main-content-general'
+        }
+    }
+
     return (
         <div className={'modal__main-content'}>
             {
@@ -41,13 +61,13 @@ function ModalMainContent({modalStyle, modalValue}) {
                             </h2>
                         </div>
 
-                        <div className={'content__bed'}>
+                        <div className={resizeBedImg()}>
                             <img src={bed} alt="bed"/>
                         </div>
 
                     </div>
                     :
-                    <div className={'main-content__woman main-content-general'}>
+                    <div className={resizeWomenImg()}>
 
                         <div className={'content-woman__title main-content__title'}>
                             <h2 className={modalStyle}
@@ -57,7 +77,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                         color: `${fontColor}`
                                     }
                                 }>
-                                {value ? value : modalValue}
+                                {modalInputValue ? modalInputValue : value}
                             </h2>
                         </div>
 
@@ -67,7 +87,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                 <p>160 cм.</p>
 
                                 <div className={'ruler__line'}>
-                                    <div className={'line-x'}> </div>
+                                    <div className={'line-x'}></div>
                                     <div className={'line-y'}>
 
                                     </div>
