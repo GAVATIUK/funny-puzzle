@@ -43,6 +43,8 @@ function ChooseFontSize() {
         else if (value >= 30)  {
             dispatch(setFontSize((sizes[value] / 100 * 80).toFixed(1)));
         }
+
+        setOpen(false)
     }
 
     return (

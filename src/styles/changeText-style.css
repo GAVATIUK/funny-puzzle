@@ -36,7 +36,7 @@
 }
 
 .empty-value::after {
-    content: 'Ви не ввели текст';
+    content: 'The field is empty';
     position: absolute;
     bottom: -46px;
     left: 0;
