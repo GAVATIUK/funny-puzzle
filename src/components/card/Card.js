@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 
-import {setIsActive, setModalStyle, setModalValue, setValue} from "../../redux/slices/toolsSlice";
+import {setIsActive, setIsEmpty, setModalStyle, setModalValue, setValue} from "../../redux/slices/toolsSlice";
 import '../../styles/cards-style.css';
 
 function Card({style, card}) {
@@ -10,12 +10,23 @@ function Card({style, card}) {
     const value = useSelector(state => state.toolsReducer.value);
 
     const handleClick = () => {
-        dispatch(setModalValue(card.name));
-        dispatch(setModalStyle(card.font));
-        dispatch(setIsActive(true))
+        if (value) {
+            dispatch(setModalValue(card.name));
+            dispatch(setModalStyle(card.font));
+            dispatch(setIsActive(true));
+            dispatch(setIsEmpty(false));
+        } else {
+            dispatch(setIsEmpty(true))
+        }
     };
 
-    const handleChange = (e) => dispatch(setValue(e.target.value));
+    const handleChange = (e) => {
+        dispatch(setValue(e.target.value));
+        if (value) {
+            dispatch(setIsEmpty(false));
+        }
+    };
+
 
     return (
         <div className={'card'}>

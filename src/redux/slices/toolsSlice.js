@@ -4,13 +4,14 @@ const initialState = {
     isActive: false,
     modalValue: 'Kaufmann',
     modalStyle: 'kaufmann',
-    value: null,
+    value: '',
     fontColor: '#020305',
     bgColor: '#A67C5F',
     bgIsActive: false,
     modalInputValue: '',
     icon: true,
-    fontSize: 50
+    fontSize: 50,
+    isEmpty: false
 };
 
 const toolsSlice = createSlice({
@@ -51,10 +52,13 @@ const toolsSlice = createSlice({
             state.fontColor = '#020305';
             state.bgIsActive = false;
             state.icon = true;
-            state.fontSize = 50
+            state.fontSize = 50;
         },
         setFontSize(state, action) {
             state.fontSize = action.payload;
+        },
+        setIsEmpty(state, action) {
+            state.isEmpty = action.payload;
         }
     }
 
@@ -62,14 +66,14 @@ const toolsSlice = createSlice({
 
 const {
     reducer: toolsReducer, actions: {
-        setIsActive, setModalValue, setModalStyle, setValue,
-        setFontColor, setBgColor, setBgIsActive, setIcon,
-        setModalInputValue, returnDefault, setFontSize
+        setIsActive, setModalValue, setModalStyle, setValue, setFontColor, setBgColor,
+        setBgIsActive, setIcon, setModalInputValue, returnDefault, setFontSize,
+        setIsEmpty
     }
 } = toolsSlice;
 
 export {
-    toolsReducer, setIsActive, setModalValue, setModalStyle, setValue,
-    setFontColor, setBgColor, setBgIsActive, setIcon,
-    setModalInputValue, returnDefault, setFontSize
+    toolsReducer, setIsActive, setModalValue, setModalStyle, setValue, setFontColor,
+    setBgColor, setBgIsActive, setIcon, setModalInputValue, returnDefault, setFontSize,
+    setIsEmpty
 };

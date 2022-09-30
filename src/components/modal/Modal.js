@@ -21,9 +21,6 @@ function Modal() {
 
     const handleChange = (e) => dispatch(setModalInputValue(e.target.value));
 
-
-    ///////////////////////////////// це походу костиль, але я по іншому поки не знаю як  //////////////////////////////
-
     const stopScrolling = () => {
         document.body.style.overflow = "hidden";
     };
