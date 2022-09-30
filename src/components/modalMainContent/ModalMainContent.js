@@ -10,7 +10,8 @@ function ModalMainContent({modalStyle, modalValue}) {
     const fontColor = useSelector(state => state.toolsReducer.fontColor);
     // const bgIsActive = useSelector(state => state.toolsReducer.bgIsActive);
     // const bgColor = useSelector(state => state.toolsReducer.bgColor);
-    const value = useSelector(state => state.toolsReducer.modalInputValue);
+    const value = useSelector(state => state.toolsReducer.value);
+    const modalInputValue = useSelector(state => state.toolsReducer.modalInputValue);
     const icon = useSelector(state => state.toolsReducer.icon);
     const fontSize = useSelector(state => state.toolsReducer.fontSize);
 
@@ -36,7 +37,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                         color: `${fontColor}`
                                     }
                                 }>
-                                {value ? value : modalValue}
+                                {modalInputValue ? modalInputValue : value}
                             </h2>
                         </div>
 
