@@ -45,11 +45,6 @@ function ChooseFontSize() {
         }
     }
 
-    console.log(fontSize)
-
-
-
-
     return (
 
         <div className={'chooseFontSize__wrapper'}>
