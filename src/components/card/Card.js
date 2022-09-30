@@ -25,6 +25,7 @@ function Card({style, card}) {
                 <textarea
                     className={style}
                     onChange={handleChange}
+                    placeholder={'Enter your text'}
                     value={value}
                 />
 

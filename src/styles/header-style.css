@@ -26,6 +26,7 @@
 .header__btn {
     padding: 16px 22px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header__btn:hover {

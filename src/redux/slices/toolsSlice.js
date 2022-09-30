@@ -4,7 +4,7 @@ const initialState = {
     isActive: false,
     modalValue: 'Kaufmann',
     modalStyle: 'kaufmann',
-    value: 'Enter your text',
+    value: null,
     fontColor: '#020305',
     bgColor: '#A67C5F',
     bgIsActive: false,

@@ -10,9 +10,14 @@ function Header() {
                 <div className={'header__items'}>
                     <h2 className={'header__logo'}>Funny Puzzle</h2>
 
-                    <div className={'header__btn green-btn'}>
+                    <a 
+                      href='https://www.etsy.com/shop/FunnyPuzzleUA?ref=seller-platform-mcnav&section_id=36548233' 
+                      target='_blank' 
+                      rel='noreferrer'
+                      className={'header__btn green-btn'}
+                    >
                         Go to shop
-                    </div>
+                    </a>
 
                 </div>
 

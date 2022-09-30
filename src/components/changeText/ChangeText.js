@@ -27,7 +27,7 @@ function ChangeText() {
 
                 <div className={'change-text__input'}>
                     <input type="text"
-                           placeholder={'Введіть текст'}
+                           placeholder={'Enter your text'}
                            onChange={handleChange}
                            value={value}
                     />
