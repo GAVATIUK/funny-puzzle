@@ -12,10 +12,17 @@ function ChooseFontSize() {
 
     const fontSize = useSelector(state => state.toolsReducer.fontSize);
 
-    const sizes = [];
-    for (let i = 8; i <= 100; i++) {
-        sizes.push(i);
-    }
+    const sizes = {
+      '10': 40,
+      '12': 45,
+      '15': 52,
+      '18': 59,
+      '21': 66,
+      '24': 73,
+      '30': 87,
+      '32': 92,
+      '35': 99
+    };
 
     const handleOnchange = (e) => {
         if (e.target.value >= 0 && e.target.value <= 100) {
@@ -49,14 +56,15 @@ function ChooseFontSize() {
                     <div className={'select__line'}></div>
 
                     {
-                        sizes.map((size, index) =>
-                            <div className={'option'}
-                                 key={index}
-                                 onClick={() => dispatch(setFontSize(size))}>
+                        
+                        Object.keys(sizes).map((value, index) => 
+                          <div className={'option'}
+                                key={index}
+                                onClick={() => dispatch(setFontSize(sizes[value]))}>
 
-                                {size}
+                                {value}
 
-                            </div>)
+                          </div>)
                     }
 
                 </div>
