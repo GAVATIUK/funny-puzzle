@@ -5,23 +5,14 @@ import {bed, bedIcon, woman, womanIcon} from "../../pictures";
 import '../../styles/modalMainContent-style.css';
 
 
-function ModalMainContent({modalStyle, modalValue}) {
+function ModalMainContent({modalStyle}) {
 
     const fontColor = useSelector(state => state.toolsReducer.fontColor);
-    // const bgIsActive = useSelector(state => state.toolsReducer.bgIsActive);
-    // const bgColor = useSelector(state => state.toolsReducer.bgColor);
     const value = useSelector(state => state.toolsReducer.value);
-    const modalInputValue = useSelector(state => state.toolsReducer.modalInputValue);
     const icon = useSelector(state => state.toolsReducer.icon);
     const fontSize = useSelector(state => state.toolsReducer.fontSize);
 
     const dispatch = useDispatch();
-
-    // const textShadow = () => {
-    //     if (bgIsActive) {
-    //         return `30px ${bgColor}`
-    //     }
-    // }
 
     const resizeBedImg = () => {
         if (fontSize >= 46.8 && fontSize < 69.6) {
@@ -57,7 +48,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                         color: `${fontColor}`
                                     }
                                 }>
-                                {modalInputValue ? modalInputValue : value}
+                                {value}
                             </h2>
                         </div>
 
@@ -77,7 +68,7 @@ function ModalMainContent({modalStyle, modalValue}) {
                                         color: `${fontColor}`
                                     }
                                 }>
-                                {modalInputValue ? modalInputValue : value}
+                                {value}
                             </h2>
                         </div>
 

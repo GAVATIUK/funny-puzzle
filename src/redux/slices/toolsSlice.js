@@ -8,7 +8,6 @@ const initialState = {
     fontColor: '#020305',
     bgColor: '#A67C5F',
     bgIsActive: false,
-    modalInputValue: '',
     icon: true,
     fontSize: 50,
     isEmpty: false
@@ -40,9 +39,6 @@ const toolsSlice = createSlice({
         setBgIsActive(state, action) {
             state.bgIsActive = action.payload;
         },
-        setModalInputValue(state, action) {
-            state.modalInputValue = action.payload;
-        },
         setIcon(state, action) {
             state.icon = action.payload;
         },
@@ -53,6 +49,8 @@ const toolsSlice = createSlice({
             state.bgIsActive = false;
             state.icon = true;
             state.fontSize = 50;
+            state.modalValue = 'Kaufmann';
+            state.modalStyle = 'kaufmann';
         },
         setFontSize(state, action) {
             state.fontSize = action.payload;
@@ -67,13 +65,11 @@ const toolsSlice = createSlice({
 const {
     reducer: toolsReducer, actions: {
         setIsActive, setModalValue, setModalStyle, setValue, setFontColor, setBgColor,
-        setBgIsActive, setIcon, setModalInputValue, returnDefault, setFontSize,
-        setIsEmpty
+        setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty
     }
 } = toolsSlice;
 
 export {
     toolsReducer, setIsActive, setModalValue, setModalStyle, setValue, setFontColor,
-    setBgColor, setBgIsActive, setIcon, setModalInputValue, returnDefault, setFontSize,
-    setIsEmpty
+    setBgColor, setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty
 };

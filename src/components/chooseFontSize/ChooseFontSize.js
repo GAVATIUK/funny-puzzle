@@ -79,7 +79,7 @@ function ChooseFontSize() {
                                 key={index}
                                 onClick={() => handleClick(value)}>
 
-                                {`${value} inch`}
+                                {`${value}  in (${value * 2.54}cm)`}
 
                           </div>)
                     }

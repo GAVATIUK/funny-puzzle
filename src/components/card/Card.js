@@ -42,20 +42,20 @@ function Card({style, card}) {
 
             </div>
 
-            <div className={'card__line line'}> </div>
+            <div className={'card__line line'}></div>
 
             <div className="btn__container"
-                onClick={handleClick}>
+                 onClick={handleClick}>
 
                 <div className={'btn__title'}>Customize</div>
 
                 <div className={'btn'}>
-                  <div className={'btn__inner'}>
-                    <div className={'plus-icon'}>
-                        <div className={'stick1'}> </div>
-                        <div className={'stick2'}> </div>
+                    <div className={'btn__inner'}>
+                        <div className={'plus-icon'}>
+                            <div className={'stick1'}></div>
+                            <div className={'stick2'}></div>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
             </div>

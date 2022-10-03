@@ -1,8 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
-import {useRef} from "react";
 
-import {ChooseColor, Select, ChooseBgColor, ModalMainContent, ChooseFontSize} from "../index";
-import {returnDefault, setModalInputValue} from "../../redux/slices/toolsSlice";
+import {ChooseColor, Select, ModalMainContent, ChooseFontSize} from "../index";
+import {returnDefault, setValue} from "../../redux/slices/toolsSlice";
 import '../../styles/modal-style.css';
 
 function Modal() {
@@ -12,14 +11,13 @@ function Modal() {
     const isActive = useSelector(state => state.toolsReducer.isActive);
     const modalValue = useSelector(state => state.toolsReducer.modalValue);
     const modalStyle = useSelector(state => state.toolsReducer.modalStyle);
+    const value = useSelector(state => state.toolsReducer.value);
 
-    const ref = useRef();
     const handleClick = () => {
         dispatch(returnDefault());
-        ref.current.value = '';
     };
 
-    const handleChange = (e) => dispatch(setModalInputValue(e.target.value));
+    const handleChange = (e) => dispatch(setValue(e.target.value));
 
     const stopScrolling = () => {
         document.body.style.overflow = "hidden";
@@ -29,7 +27,6 @@ function Modal() {
     };
 
     isActive ? stopScrolling() : returnScroll();
-
 
     return (
 
@@ -63,7 +60,7 @@ function Modal() {
 
                             <div className={'options__input'}>
                                 <textarea
-                                       ref={ref}
+                                       value={value}
                                        placeholder={'Type something...'}
                                        onChange={handleChange}/>
                             </div>
@@ -83,10 +80,6 @@ function Modal() {
                             <div className={'options__line'}></div>
 
                             <ChooseColor/>
-
-                            {/* <div className={'options__line'}></div>
-
-                            <ChooseBgColor/> */}
 
                         </div>
                     </div>
