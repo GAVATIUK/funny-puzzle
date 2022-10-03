@@ -1,4 +1,4 @@
-import {Main, Header} from "./components";
+import {Main, Header, Footer} from "./components";
 import './styles/general-style.css';
 
 
@@ -8,6 +8,7 @@ function App() {
         <div>
             <Header/>
             <Main/>
+            <Footer/>
         </div>
     );
 }
