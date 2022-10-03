@@ -13,9 +13,7 @@ function ChangeText() {
 
     const handleChange = (e) => {
         dispatch(setValue(e.target.value));
-        if (value) {
-            dispatch(setIsEmpty(false));
-        }
+        dispatch(setIsEmpty(false));
     };
 
     const handleClick = () => {

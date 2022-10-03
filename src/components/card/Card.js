@@ -16,7 +16,7 @@ function Card({style, card}) {
             dispatch(setIsActive(true));
             dispatch(setIsEmpty(false));
         } else {
-            dispatch(setIsEmpty(true))
+            dispatch(setIsEmpty(true));
         }
     };
 

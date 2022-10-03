@@ -20,8 +20,8 @@ function ChooseColor() {
 
             <div className={'colors__container'}>
                 {
-                    colors.map(color => <div
-                        // className={'color-icon'}
+                    colors.map(color =>
+                        <div
                         className={isChosen(color.hex) ? 'color-icon chosen' : 'color-icon'}
                         key={color.id}
                         style={{backgroundColor: `${color.hex}`}}
