@@ -77,13 +77,3 @@
     }
 
 }
-
-@media (max-width: 480px) {
-
-    .color-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 9px;
-    }
-
-}
