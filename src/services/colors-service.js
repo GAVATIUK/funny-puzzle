@@ -1,99 +1,123 @@
 const colors = [
     {
         id: 1,
-        hex: '#020305'
+        hex: '#EABE7B',
+        colorId: '1C'
     },
     {
         id: 2,
-        hex: '#A8F3C3'
+        hex: '#C1A36D',
+        colorId: '2C'
     },
     {
         id: 3,
-        hex: '#EDF562'
+        hex: '#E88A63',
+        colorId: '3C'
     },
     {
         id: 4,
-        hex: '#F5DBCE'
+        hex: '#E3C3A9',
+        colorId: '4C'
     },
     {
         id: 5,
-        hex: '#D980AC'
+        hex: '#5F2F5B',
+        colorId: '5C'
     },
     {
         id: 6,
-        hex: '#AAB7AD'
+        hex: '#D2A9B5',
+        colorId: '6C'
     },
     {
         id: 7,
-        hex: '#83DC92'
+        hex: '#B68D70',
+        colorId: '7C'
     },
     {
         id: 8,
-        hex: '#AFFFC2'
+        hex: '#B89C91',
+        colorId: '8C'
     },
     {
         id: 9,
-        hex: '#F5BE95'
+        hex: '#E5C29E',
+        colorId: '9C'
     },
     {
         id: 10,
-        hex: '#DFB497'
+        hex: '#F0F1EE',
+        colorId: '10C'
     },
     {
         id: 11,
-        hex: '#95E8C0'
+        hex: '#A8696E',
+        colorId: '11C'
     },
     {
         id: 12,
-        hex: '#58E7D1'
+        hex: '#867DA7',
+        colorId: '12C'
     },
     {
         id: 13,
-        hex: '#FF0216'
+        hex: '#91BBA6',
+        colorId: '13C'
     },
     {
         id: 14,
-        hex: '#DCB8C4'
+        hex: '8CA69D',
+        colorId: '14C'
     },
     {
         id: 15,
-        hex: '#75FEBB'
+        hex: '#55A5B1',
+        colorId: '15C'
     },
     {
         id: 16,
-        hex: '#E1C885'
+        hex: '#2A81AD',
+        colorId: '16C'
     },
     {
         id: 17,
-        hex: '#622B7B'
+        hex: '#E3CC59',
+        colorId: '17C'
     },
     {
         id: 18,
-        hex: '#FDA196'
+        hex: '#DD7A2E',
+        colorId: '18C'
     },
     {
         id: 19,
-        hex: '#C3B8F4'
+        hex: '#6E8E7C',
+        colorId: '19C'
     },
     {
         id: 20,
-        hex: '#F2D0B7'
+        hex: '#79979E',
+        colorId: '20C'
     },
     {
         id: 21,
-        hex: '#FF853A'
+        hex: '#002C6D',
+        colorId: '21C'
     },
     {
         id: 22,
-        hex: '#F9D26E'
+        hex: '#888682',
+        colorId: '22C'
     },
     {
         id: 23,
-        hex: '#EFF4ED'
+        hex: '#C90100',
+        colorId: '23C'
     },
     {
         id: 24,
-        hex: '#F1CCEB'
+        hex: '#080F18',
+        colorId: '24C'
     }
 ];
 

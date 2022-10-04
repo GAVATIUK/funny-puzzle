@@ -10,6 +10,15 @@ function ChooseColor() {
 
     const fontColor = useSelector(state => state.toolsReducer.fontColor);
 
+    const getColor = (color) => {
+        if (color.colorId === '5C' || color.colorId === '21C' ||
+            color.colorId === '23C' || color.colorId === '24C') {
+            return '#fff';
+        } else {
+            return '#000'
+        }
+    };
+
     const isChosen = (item) => {
         return fontColor === item;
     };
@@ -22,12 +31,15 @@ function ChooseColor() {
                 {
                     colors.map(color =>
                         <div
-                        className={isChosen(color.hex) ? 'color-icon chosen' : 'color-icon'}
-                        key={color.id}
-                        style={{backgroundColor: `${color.hex}`}}
-                        onClick={() => dispatch(setFontColor(color.hex))}
-                    >
-                    </div>)
+                            className={isChosen(color.hex) ? 'color-icon chosen' : 'color-icon'}
+                            key={color.id}
+                            style={{backgroundColor: `${color.hex}`,
+                            color: getColor(color)
+                            }}
+                            onClick={() => dispatch(setFontColor(color.hex))}
+                        >
+                            {color.colorId}
+                        </div>)
                 }
             </div>
 

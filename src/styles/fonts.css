@@ -263,16 +263,16 @@ body {
     font-family: 'Srinthile Script', cursive;
 }
 
-/*//////////////////////////////////////////// - Vladimir Script -  ////////////////////////////////////////////*/
+/*//////////////////////////////////////////// - The Parkers -  ////////////////////////////////////////////*/
 
 @font-face {
-    font-family: "Vladimir Script";
-    src: local("Vladimir Script"),
+    font-family: "The Parkers";
+    src: local("TheParkers"),
     url("../fonts/VLADIMIR.TTF") format("truetype");
 }
 
-.vladimirScript {
-    font-family: 'Vladimir Script', cursive;
+.theParkers {
+    font-family: 'The Parkers', cursive;
 }
 
 /*//////////////////////////////////////////// - Kaufmann -  ////////////////////////////////////////////*/

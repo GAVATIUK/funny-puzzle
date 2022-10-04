@@ -42,6 +42,7 @@ function Select({modalValue, modalStyle}) {
                         <div className={'option'}
                              key={font.id}
                              onClick={() => handleClick(font)}>
+                            <p>{font.fontID}</p>
                             <h3 className={font.font}>{font.name}</h3>
                         </div>)
                 }
