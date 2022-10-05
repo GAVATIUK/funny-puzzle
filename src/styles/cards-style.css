@@ -34,6 +34,7 @@
     font-size: 50px;
     padding: 15px 0 0 10px;
     height: 99%;
+    word-break: normal;
 }
 
 .card__title > textarea:focus {

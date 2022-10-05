@@ -31,7 +31,6 @@
 }
 
 .main-content__title {
-    word-break: break-all;
     position: relative;
 }
 
@@ -39,6 +38,7 @@
     color: #4F4F4F;
     position: relative;
     z-index: 2;
+    word-break: normal;
 }
 .main-content__title > span {
   color: #4F4F4F;
@@ -72,7 +72,6 @@
     overflow: hidden;
     transition: 0s;
     text-align: start;
-    word-break: break-all;
     box-sizing: border-box;
 }
 
