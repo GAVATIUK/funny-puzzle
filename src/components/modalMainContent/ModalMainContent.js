@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setIcon} from "../../redux/slices/toolsSlice";
 import {bed, bedIcon, woman, womanIcon} from "../../pictures";
 import '../../styles/modalMainContent-style.css';
+import {getFontSize} from "../../services/constants";
 
 
 function ModalMainContent({modalStyle}) {
@@ -44,7 +45,8 @@ function ModalMainContent({modalStyle}) {
                             <h2 className={modalStyle}
                                 style={
                                     {
-                                        fontSize: `${fontSize}px`,
+                                        // fontSize: `${fontSize}px`,
+                                        fontSize: getFontSize(modalStyle, +fontSize),
                                         color: `${fontColor}`
                                     }
                                 }>

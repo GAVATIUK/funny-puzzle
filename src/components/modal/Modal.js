@@ -30,13 +30,12 @@ function Modal() {
 
     return (
 
-        <div className={isActive ? 'modal active' : 'modal'}
-             onClick={handleClick}>
+        <div className={isActive ? 'modal active' : 'modal'}>
 
-            <div className={isActive ? 'modal__wrapper wrapper active' : 'modal__wrapper wrapper'}
+            <div className={isActive ? 'modal__wrapper active' : 'modal__wrapper'}
                  onClick={e => e.stopPropagation()}>
 
-                <div className={'modal__container'}>
+                <div className={'modal__container wrapper'}>
 
                     <div className={'modal__header'}>
                         <h1 className={'modal__header-title'}>Customize your style</h1>

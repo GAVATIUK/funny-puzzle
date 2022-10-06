@@ -56,7 +56,7 @@ body {
 
 .candyButterfly {
     font-family: 'Candy Butterfly', cursive;
-    line-height: 130px;
+    line-height: 100px;
 }
 
 /*//////////////////////////////////////////// - Capinella ou Beaujoais -  ////////////////////////////////////////////*/
@@ -213,6 +213,7 @@ body {
 
 .magnoliaSky {
     font-family: 'Magnolia Sky', cursive;
+    line-height: 80px;
 }
 
 /*//////////////////////////////////////////// - Masterics -  ////////////////////////////////////////////*/

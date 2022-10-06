@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import {setFontSize} from "../../redux/slices/toolsSlice";
+import {setFontSize, setSelectedSize} from "../../redux/slices/toolsSlice";
 
 
 function ChooseFontSize() {
@@ -10,24 +10,19 @@ function ChooseFontSize() {
 
     const dispatch = useDispatch();
 
-    const fontSize = useSelector(state => state.toolsReducer.fontSize);
+    const selectedSize = useSelector(state => state.toolsReducer.selectedSize);
+
 
     const sizes = {
       '10': 40,
       '12': 45,
-      '15': 52,
-      '18': 59,
-      '21': 66,
-      '24': 73,
-      '30': 87,
-      '32': 92,
-      '35': 99
-    };
-
-    const handleOnchange = (e) => {
-        if (e.target.value >= 0 && e.target.value <= 100) {
-            dispatch(setFontSize(e.target.value));
-        }
+      '15': 55,
+      '18': 70,
+      '21': 80,
+      '24': 90,
+      '30': 115,
+      '32': 130,
+      '35': 150
     };
 
     const handleClick = (value) => {
@@ -45,7 +40,10 @@ function ChooseFontSize() {
         }
 
         setOpen(false)
+        dispatch(setSelectedSize(value))
     }
+
+
 
     return (
 
@@ -54,11 +52,7 @@ function ChooseFontSize() {
 
                 <div className={'select'} onClick={() => setOpen(!open)}>
 
-                    <input type='number'
-                           value={fontSize}
-                           onChange={handleOnchange}
-                           onClick={e => e.stopPropagation()}
-                    />
+                    <h3>{selectedSize} in</h3>
 
                     <div className={open ? 'select__btn selected' : 'select__btn'}>
                       <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +73,7 @@ function ChooseFontSize() {
                                 key={index}
                                 onClick={() => handleClick(value)}>
 
-                                {`${value}  in (${value * 2.54}cm)`}
+                                {`${value} in (${value * 2.54}cm)`}
 
                           </div>)
                     }

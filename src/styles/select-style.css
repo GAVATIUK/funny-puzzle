@@ -16,7 +16,7 @@
 }
 
 .select {
-    width: 525px;
+    width: 515px;
     height: 80px;
     position: fixed;
     display: flex;
@@ -29,11 +29,11 @@
     cursor: pointer;
 }
 
-.select > input {
-    font-size: 18px;
-    height: 92%;
-    width: 30%;
+.select > h3 {
+    font-size: 15px;
 }
+
+
 
 .select__btn {
     width: 46px;

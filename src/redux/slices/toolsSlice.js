@@ -9,8 +9,9 @@ const initialState = {
     bgColor: '#A67C5F',
     bgIsActive: false,
     icon: true,
-    fontSize: 50,
-    isEmpty: false
+    fontSize: 55,
+    isEmpty: false,
+    selectedSize: 15
 };
 
 const toolsSlice = createSlice({
@@ -57,6 +58,9 @@ const toolsSlice = createSlice({
         },
         setIsEmpty(state, action) {
             state.isEmpty = action.payload;
+        },
+        setSelectedSize(state, action) {
+            state.selectedSize = action.payload;
         }
     }
 
@@ -65,11 +69,11 @@ const toolsSlice = createSlice({
 const {
     reducer: toolsReducer, actions: {
         setIsActive, setModalValue, setModalStyle, setValue, setFontColor, setBgColor,
-        setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty
+        setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty, setSelectedSize
     }
 } = toolsSlice;
 
 export {
-    toolsReducer, setIsActive, setModalValue, setModalStyle, setValue, setFontColor,
-    setBgColor, setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty
+    toolsReducer, setIsActive, setModalValue, setModalStyle, setValue, setFontColor, setBgColor,
+    setBgIsActive, setIcon, returnDefault, setFontSize, setIsEmpty, setSelectedSize
 };

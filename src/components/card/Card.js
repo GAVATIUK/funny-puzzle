@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {setIsActive, setIsEmpty, setModalStyle, setModalValue, setValue} from "../../redux/slices/toolsSlice";
 import '../../styles/cards-style.css';
+import {getFontSize} from "../../services/constants";
 
 function Card({style, card}) {
 
@@ -38,6 +39,7 @@ function Card({style, card}) {
                     onChange={handleChange}
                     placeholder={'Enter your text'}
                     value={value}
+                    // style={{fontSize: getFontSize(card.font, 50)}}
                 />
 
             </div>
