@@ -52,7 +52,7 @@
 }
 
 .content__bed > img {
-    width: 100%;
+    width: 90%;
 }
 
 .main-content__woman {
@@ -60,6 +60,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: flex-start;
+    column-gap: 5px;
     /*padding-top: 46px;*/
     height: 500px;
     padding: 46px 10px 5px;
@@ -68,7 +69,7 @@
 .content-woman__title {
     order: 2;
     height: 90%;
-    max-width: 68%;
+    max-width: 53%;
     padding: 26px 26px 10px;
     overflow: hidden;
     transition: 0s;
@@ -86,7 +87,7 @@
 .content-woman {
     order: 1;
     height: 100%;
-    width: 32%;
+    width: 37%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -94,7 +95,7 @@
 }
 
 .ruler {
-    height: 93%;
+    height: 98%;
     /*width: calc(50% - 41px);*/
     display: flex;
     flex-direction: column;
@@ -157,11 +158,11 @@
 }
 
 .resize-bed1 > img {
-    width: 90%;
+    width: 80%;
 }
 
 .resize-bed2 > img {
-    width: 80%;
+    width: 75%;
 }
 
 /*.resize-woman2 {
