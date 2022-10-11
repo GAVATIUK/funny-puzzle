@@ -66,7 +66,7 @@
 @media (max-width: 991px) {
 
     .colors__container {
-        column-gap: 25px;
+        column-gap: 30px;
     }
 
     .color-icon {
@@ -90,7 +90,7 @@
 
     .colors__container {
         padding: 20px;
-        column-gap: 20px;
+        column-gap: 24px;
     }
 
     .color-icon {
@@ -105,7 +105,7 @@
 
     .colors__container {
         padding: 20px;
-        column-gap: 29px;
+        column-gap: 14px;
     }
 
     .color-icon {
@@ -121,7 +121,7 @@
     .colors__container {
         padding: 15px;
         justify-content: space-between;
-        column-gap: 18px;
+        column-gap: 10px;
     }
 
     .color-icon {
