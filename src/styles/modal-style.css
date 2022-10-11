@@ -142,10 +142,6 @@
         padding: 50px 0 0;
     }
 
-    .modal__container {
-        width: 860px;
-    }
-
     .modal__header {
         margin-bottom: 35px;
     }
@@ -179,6 +175,12 @@
         padding: 15px 10px 50px 22px;
     }
 
+}
+
+@media (max-width: 1199px) and (min-width: 991px) {
+    .modal__container.wrapper {
+        width: 1000px;
+    }
 }
 
 @media (max-width: 991px) {

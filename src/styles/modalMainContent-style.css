@@ -73,7 +73,6 @@
 .content-woman__title {
     order: 2;
     height: 90%;
-    max-width: 53%;
     padding: 26px 26px 10px;
     overflow: hidden;
     transition: 0s;
@@ -94,6 +93,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    min-width: 33%;
     /*column-gap: 24px;*/
 }
 
@@ -361,6 +361,10 @@
         border-radius: 17px;
         width: 50px;
         height: 50px;
+    }
+
+    .main-content__icons > .icon:nth-child(2) {
+        display: none;
     }
 
     .main-content__icons > .icon > img {
