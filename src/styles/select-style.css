@@ -125,7 +125,7 @@
 
     .options__wrapper {
         row-gap: 18px;
-        padding: 60px 60px 20px 23px;
+        padding: 60px 23px 20px 23px;
     }
 
 }
@@ -133,7 +133,7 @@
 @media (max-width: 991px) {
 
     .select {
-        width: 690px;
+        width: 100%;
     }
 
 }
@@ -141,7 +141,7 @@
 @media (max-width: 767px) {
 
     .select {
-        width: 420px;
+        width: 450px;
     }
 
 }
@@ -149,7 +149,7 @@
 @media (max-width: 530px) {
 
     .select {
-        width: 80%;
+        width: 90%;
     }
 
 }
@@ -206,6 +206,6 @@
 
 @media (max-width: 380px) {
     .select {
-        width: 70%;
+        width: 80%;
     }
 }
