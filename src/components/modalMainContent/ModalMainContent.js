@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setIcon} from "../../redux/slices/toolsSlice";
 import {bed, bedIcon, woman, womanIcon} from "../../pictures";
 import '../../styles/modalMainContent-style.css';
-import {getFontSize} from "../../services/constants";
+import {getFontSize} from "../constants/constants";
 
 
 function ModalMainContent({modalStyle}) {
@@ -25,15 +25,15 @@ function ModalMainContent({modalStyle}) {
         }
     }
 
-    const resizeWomenImg = () => {
-        if (fontSize >= 46.8 && fontSize < 69.6) {
-            return 'main-content__woman main-content-general resize-woman1'
-        } else if (fontSize >= 69.6) {
-            return 'main-content__woman main-content-general resize-woman2'
-        } else {
-            return 'main-content__woman main-content-general'
-        }
-    }
+    // const resizeWomenImg = () => {
+    //     if (fontSize >= 46.8 && fontSize < 69.6) {
+    //         return 'main-content__woman main-content-general resize-woman1'
+    //     } else if (fontSize >= 69.6) {
+    //         return 'main-content__woman main-content-general resize-woman2'
+    //     } else {
+    //         return 'main-content__woman main-content-general'
+    //     }
+    // }
 
     return (
         <div className={'modal__main-content'}>
@@ -45,7 +45,6 @@ function ModalMainContent({modalStyle}) {
                             <h2 className={modalStyle}
                                 style={
                                     {
-                                        // fontSize: `${fontSize}px`,
                                         fontSize: getFontSize(modalStyle, +fontSize),
                                         color: `${fontColor}`
                                     }
@@ -60,13 +59,13 @@ function ModalMainContent({modalStyle}) {
 
                     </div>
                     :
-                    <div className={resizeWomenImg()}>
+                    <div className={/*resizeWomenImg()*/ 'main-content__woman main-content-general'}>
 
                         <div className={'content-woman__title main-content__title'}>
                             <h2 className={modalStyle}
                                 style={
                                     {
-                                        fontSize: `${fontSize}px`,
+                                        fontSize: getFontSize(modalStyle, +fontSize),
                                         color: `${fontColor}`
                                     }
                                 }>

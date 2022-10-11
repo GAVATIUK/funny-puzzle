@@ -58,20 +58,24 @@
 .main-content__woman {
     display: flex;
     overflow: hidden;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    padding-top: 46px;
+    /*padding-top: 46px;*/
+    height: 500px;
+    padding: 46px 10px 5px;
 }
 
 .content-woman__title {
     order: 2;
     height: 90%;
-    width: 50%;
-    padding: 26px 7px 10px;
+    max-width: 68%;
+    padding: 26px 26px 10px;
     overflow: hidden;
     transition: 0s;
-    text-align: start;
+    /*text-align: start;*/
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .content-woman__title > span {
@@ -82,27 +86,26 @@
 .content-woman {
     order: 1;
     height: 100%;
-    width: 50%;
+    width: 32%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    column-gap: 24px;
+    /*column-gap: 24px;*/
 }
 
 .ruler {
-    height: 100%;
-    width: calc(50% - 41px);
-    padding-left: 21px;
+    height: 93%;
+    /*width: calc(50% - 41px);*/
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
 }
 
 .ruler > p {
     font-weight: 500;
     font-size: 12px;
     color: #9E9E9E;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .ruler__line {
@@ -190,8 +193,8 @@
 @media (min-width: 1350px) {
 
     .content-woman > img {
-        width: 65%;
-        height: 96%;
+        width: 70%;
+        height: 99%;
     }
 
    /* .resize-woman2 > .content-woman > img {
@@ -205,6 +208,13 @@
     .main-content__icons > .icon:hover {
         background: #EAEAEA;
         border: 3px solid #EAEAEA;
+    }
+}
+
+@media (max-width: 1350px) {
+    .content-woman > img {
+        width: 78%;
+        height: 95%;
     }
 }
 
@@ -229,11 +239,12 @@
     }
 
     .content-woman {
-        column-gap: 10px;
+        /*column-gap: 10px;*/
     }
 
     .content-woman > img {
-        width: 67%;
+        width: 74%;
+        height: 99%;
     }
 
     .content-woman__title > h2 {
@@ -279,7 +290,7 @@
     }
 
     .content-woman {
-        width: 40%;
+        width: 29%;
         column-gap: 15px;
     }
 
@@ -339,7 +350,8 @@
     }
 
     .content-woman > img {
-        width: 47%;
+        width: 40%;
+        height: 94%;
     }
 
     .main-content__icons {
@@ -393,7 +405,8 @@
     .content-woman__title {
         width: 65%;
         padding: 0 7px 0;
-        margin: 0 0 0;
+        padding-top: 10px;
+        margin: 0;
         height: 90%;
     }
 

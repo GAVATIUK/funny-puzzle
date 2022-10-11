@@ -94,7 +94,7 @@
 
 @media (max-width: 1350px) {
     .select {
-        width: 500px;
+        width: 452px;
     }
 }
 
@@ -109,7 +109,7 @@
     }
 
     .select {
-        width: 390px;
+        width: 363px;
         height: 60px;
     }
 
@@ -133,7 +133,7 @@
 @media (max-width: 991px) {
 
     .select {
-        width: 600px;
+        width: 690px;
     }
 
 }
@@ -141,7 +141,7 @@
 @media (max-width: 767px) {
 
     .select {
-        width: 410px;
+        width: 420px;
     }
 
 }
@@ -202,4 +202,10 @@
         line-height: 20px;
     }
 
+}
+
+@media (max-width: 380px) {
+    .select {
+        width: 70%;
+    }
 }

@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {setIsActive, setIsEmpty, setModalStyle, setModalValue, setValue} from "../../redux/slices/toolsSlice";
 import '../../styles/cards-style.css';
-import {getFontSize} from "../../services/constants";
+import {getFontSize} from "../constants/constants";
 
 function Card({style, card}) {
 

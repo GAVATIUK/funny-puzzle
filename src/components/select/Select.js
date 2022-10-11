@@ -4,7 +4,6 @@ import {useState} from "react";
 import {setModalStyle, setModalValue} from "../../redux/slices/toolsSlice";
 import {fonts} from "../../services/fonts-service";
 import '../../styles/select-style.css';
-import {getFontSize} from "../../services/constants";
 
 
 function Select({modalValue, modalStyle}) {
