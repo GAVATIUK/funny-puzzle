@@ -167,6 +167,7 @@
 
     .select {
         height: 40px;
+        padding-right: 10px;
     }
 
     .select > h2 {
@@ -186,7 +187,7 @@
 
     .options__wrapper {
         row-gap: 12px;
-        padding: 40px 60px 20px 23px;
+        padding: 40px 23px 20px 23px;
     }
 
     .option {
