@@ -24,10 +24,14 @@ body {
 /*//////////////////////////////////////////// - Anastasia Script -  ////////////////////////////////////////////*/
 
 @font-face {
-    font-family: "Anastasia Script";
-    src: local("Anastasia Script"),
-    url("../fonts/Anastasia Script.ttf") format("truetype");
+  font-family: 'Anastasia Script';
+  src: url('../fonts/Anastasia Script.woff2') format('woff2'),
+      url('../fonts/Anastasia Script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 
 .anastasiaScript {
     font-family: 'Anastasia Script', cursive;
@@ -122,9 +126,12 @@ body {
 /*//////////////////////////////////////////// - Gabrielly -  ////////////////////////////////////////////*/
 
 @font-face {
-    font-family: "Gabrielly";
-    src: local("Gabrielly"),
-    url("../fonts/Gabrielly.ttf") format("truetype");
+  font-family: 'Gabrielly';
+  src: url('../fonts/Gabrielly.woff2') format('woff2'),
+      url('../fonts/Gabrielly.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .gabrielly {

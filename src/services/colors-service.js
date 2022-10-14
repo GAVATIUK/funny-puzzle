@@ -66,7 +66,7 @@ const colors = [
     },
     {
         id: 14,
-        hex: '8CA69D',
+        hex: '#8CA69D',
         colorId: '14C'
     },
     {

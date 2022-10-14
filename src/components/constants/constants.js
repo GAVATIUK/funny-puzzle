@@ -2,8 +2,8 @@ const getFontSize = (item, size) => {
     switch (item) {
         case 'masterics':
             return `calc(${size + (size * 20 / 100)}px)`;
-        case 'anastasiaScript':
-            return `calc(${size - (size * 50 / 100)}px`;
+        // case 'anastasiaScript':
+        //     return `calc(${size - (size * 50 / 100)}px`;
         case 'kunstler':
             return `calc(${size + (size * 20 / 100)}px)`;
         case 'magnoliaSky':
